@@ -9,17 +9,23 @@ imaging, and I like taking a model all the way from data to deployment.
 
 ## 💼 Experience
 
-**ML Engineer Intern** — Wiremind (Cargo Team) · Mar 2026 – Aug 2026
+**ML Engineer Intern - Wiremind (Cargo Team)**
+*Paris, France · Mar 2026 – Aug 2026*
 - Designed LightGBM-based baggage weight and volume forecasting models for a new
   client, from data cleaning to deployment.
 - Removed the team's dependency on an external passenger forecast provider by
-  relying solely on the client's own historical data — became the team's
-  best-performing model (MdAPE 22% for weight, 95% accuracy for volume).
-- Led R&D on automated model monitoring, training secondary models on prediction
-  residuals to detect anomalies and performance drift.
+  relying solely on the client's own historical data, achieving a MdAPE of 22%
+  for weight and 95% accuracy for volume — the latter became the team's
+  best-performing model.
+- Led R&D on automated model monitoring, training secondary models on
+  prediction residuals to detect anomalies and performance drift, using SHAP
+  to interpret which features drove the largest errors.
+- Monitored production baggage weight and volume forecasting models for Etihad
+  & WestJet, using datasets of up to ~1M forecast rows/month for Etihad;
+  identified error causes and proposed fixes.
 
-**Computer Vision Research Intern** — Center for Visual Computing, CentraleSupélec
-· Sep 2025 – Feb 2026
+**Computer Vision Research Intern - Center for Visual Computing, CentraleSupélec - Université Paris-Saclay**
+*Paris-Saclay, France · Sep 2025 – Feb 2026*
 - Developed a multimodal deep learning model to predict survival time for liver
   cancer patients from histopathology slides and CT scans, in collaboration
   with hospitals in Île-de-France.
@@ -34,10 +40,11 @@ imaging, and I like taking a model all the way from data to deployment.
 
 ## 🛠 Selected Projects
 
-**[ASL Sign Language Recognition](https://github.com/alexandrebertot/asl-recognition)**
-Real-time American Sign Language alphabet recognition using MediaPipe hand
-landmarks and a lightweight classifier, with a live webcam demo.
-*(add final accuracy / dataset details here)*
+**[ASL Alphabet Recognition](https://github.com/alexandrebertot/asl-recognition)**
+Built a real-time American Sign Language alphabet recognition system (MediaPipe
+landmarks + MLP classifier, live webcam demo), trained on 24,000 images with a
+signer-disjoint split, achieving a macro F1 of 0.856 (85% accuracy) on unseen
+signers.
 
 **[Go Game with AI](https://github.com/Riad-Attou/go-ai-app)**
 Go game with a Pygame interface and an AI opponent using Minimax with
