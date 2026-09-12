@@ -20,10 +20,17 @@ imaging, and I like taking a model all the way from data to deployment.
 
 **Computer Vision Research Intern** — Center for Visual Computing, CentraleSupélec
 · Sep 2025 – Feb 2026
-- Developed a multimodal deep learning model predicting survival time for liver
-  cancer patients from histopathology and CT scan regions.
-- Implemented and evaluated the pipeline in PyTorch on a cohort of 70 patients,
-  achieving an average absolute error of 2.5 months.
+- Developed a multimodal deep learning model to predict survival time for liver
+  cancer patients from histopathology slides and CT scans, in collaboration
+  with hospitals in Île-de-France.
+- Extracted and encoded histopathology patches with pretrained encoders,
+  applying attention-based Multiple Instance Learning (MIL) and aggregating
+  per-patch *predictions* — rather than features — via the MIL attention weights.
+- Combined histology and CT modalities via a weighted average of predictions
+  rather than feature concatenation, to avoid the larger CT feature vector
+  dominating the fused representation given the limited cohort size (70 patients);
+  achieved an average absolute error of 2.5 months on patients with survival
+  ≤ 12 months.
 
 ## 🛠 Selected Projects
 
