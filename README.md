@@ -61,6 +61,3 @@ alpha-beta pruning (PVS) and custom evaluation functions.
   <img src="https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white" />
   <img src="https://img.shields.io/badge/Argo-EF7B4D?style=for-the-badge&logo=argo&logoColor=white" />
 </p>
-
-## 🌐 Languages
-English (Fluent) · French (Native) · Japanese (Intermediate, JLPT N4)
