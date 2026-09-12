@@ -1,10 +1,11 @@
 # Hi, I'm Alexandre 👋
 
 ## 🚀 About Me
-Final-year Machine Learning / AI student at École Centrale de Lyon, seeking a
-6-month end-of-studies internship starting **March 2027**. I've worked on applied
-ML in production (forecasting) and deep learning research (medical imaging), and
-I like taking a model all the way from data to deployment.
+Final-year Engineering student at École Centrale de Lyon, specializing in Computer
+Science with a focus on Machine Learning and Data Science, seeking a 6-month
+end-of-studies internship starting **March 2027**. I've worked on applied ML in
+production (forecasting) and deep learning research (medical imaging), and I
+like taking a model all the way from data to deployment.
 
 ## 💼 Experience
 
