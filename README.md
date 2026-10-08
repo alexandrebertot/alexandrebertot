@@ -3,9 +3,9 @@
 ## 🚀 About Me
 Final-year Engineering student at École Centrale de Lyon, specializing in Computer
 Science with a focus on Machine Learning and Data Science, seeking a 6-month
-end-of-studies internship starting **March 2027**. I've worked on applied ML in
-production through forecasting, and on deep learning research applied to medical
-imaging, and I like taking a model all the way from data to deployment.
+end-of-studies internship starting **March 2027**. I've built ML models in production
+(air cargo forecasting) and in deep learning research (medical imaging), and I like
+taking a model all the way from data to deployment.
 
 ## 💼 Experience
 
@@ -14,9 +14,9 @@ imaging, and I like taking a model all the way from data to deployment.
 - Designed LightGBM-based baggage weight and volume forecasting models for a new
   client, from data cleaning to deployment.
 - Removed the team's dependency on an external passenger forecast provider by
-  relying solely on the client's own historical data, achieving a MdAPE of 22%
-  for weight and 95% accuracy for volume — the latter became the team's
-  best-performing model.
+  relying solely on the client's own historical data, achieving an MdAPE of 22%
+  for weight and 95% of volume forecasts within ±1 container — the latter became
+  the team's best-performing model.
 - Led R&D on automated model monitoring, training secondary models on
   prediction residuals to detect anomalies and performance drift, using SHAP
   to interpret which features drove the largest errors.
@@ -35,10 +35,19 @@ imaging, and I like taking a model all the way from data to deployment.
 - Combined histology and CT modalities via a weighted average of predictions
   rather than feature concatenation, to avoid the larger CT feature vector
   dominating the fused representation given the limited cohort size (70 patients);
-  achieved an average absolute error of 2.5 months on patients with survival
+  achieved a mean absolute error (MAE) of 2.5 months on patients with survival
   ≤ 12 months.
 
 ## 🛠 Selected Projects
+
+**[Football Match Analyst](https://github.com/alexandrebertot/football-match-analyst)** · 🚧 *In progress*
+LLM agent that answers questions about the top 5 European leagues and the Champions League
+by calling tools: live data from the football-data.org API and a LightGBM match predictor.
+Tool-calling loop written from scratch, local Qwen LLM served by Ollama, a local chat
+interface, FastAPI, Docker, CI with GitHub Actions. The predictor, tracked and versioned in
+MLflow, closes 44% of the log-loss gap between a naive baseline and bookmakers' odds on
+held-out seasons.
+*Next: an LLM evaluation set, then QLoRA fine-tuning of a small model.*
 
 **[ASL Alphabet Recognition](https://github.com/alexandrebertot/asl-recognition)**
 Built a real-time American Sign Language alphabet recognition system (MediaPipe
@@ -46,20 +55,20 @@ landmarks + MLP classifier, live webcam demo), trained on 24,000 images with a
 signer-disjoint split, achieving a macro F1 of 0.856 (85% accuracy) on unseen
 signers.
 
-**[Go Game with AI](https://github.com/Riad-Attou/go-ai-app)**
+**[Go Game with AI](https://github.com/Riad-Attou/go-ai-app)** · *Team project*
 Go game with a Pygame interface and an AI opponent using Minimax with
 alpha-beta pruning (PVS) and custom evaluation functions.
 
-## 🛠 Technical Skills
+## 🧰 Technical Skills
 
 <p align="center"><b>Languages</b></p>
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge" />
 </p>
 
-<p align="center"><b>AI & Data Science</b></p>
+<p align="center"><b>AI &amp; Data Science</b></p>
 <p align="center">
   <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
   <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" />
@@ -73,6 +82,8 @@ alpha-beta pruning (PVS) and custom evaluation functions.
 <p align="center">
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
   <img src="https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white" />
   <img src="https://img.shields.io/badge/Argo-EF7B4D?style=for-the-badge&logo=argo&logoColor=white" />
 </p>
