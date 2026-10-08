@@ -1,22 +1,21 @@
 # Hi, I'm Alexandre 👋
 
 ## 🚀 About Me
-Final-year Engineering student at École Centrale de Lyon, specializing in Computer
-Science with a focus on Machine Learning and Data Science, seeking a 6-month
-end-of-studies internship starting **March 2027**. I've built ML models in production
-(air cargo forecasting) and in deep learning research (medical imaging), and I like
-taking a model all the way from data to deployment.
+Final-year Computer Science student at École Centrale de Lyon, seeking a 6-month
+end-of-studies internship from **March 2027** in Data Science, Machine Learning or AI.
+I've built forecasting models in production (airline baggage at Wiremind), a multimodal
+deep learning model in research (medical imaging), and I'm currently building an LLM
+agent end-to-end.
 
 ## 💼 Experience
 
 **ML Engineer Intern - Wiremind (Cargo Team)**
 *Paris, France · Mar 2026 – Aug 2026*
-- Designed LightGBM-based baggage weight and volume forecasting models for a new
+- Built and deployed LightGBM-based baggage weight and volume forecasting models for a new
   client, from data cleaning to deployment.
-- Removed the team's dependency on an external passenger forecast provider by
-  relying solely on the client's own historical data, achieving an MdAPE of 22%
-  for weight and 95% of volume forecasts within ±1 container — the latter became
-  the team's best-performing model.
+- Removed the dependency on an external passenger forecast provider using only the
+  client's own history: 95% of volume forecasts within ±1 container (the team's
+  best-performing model) and an MdAPE of 22% on weight.
 - Led R&D on automated model monitoring, training secondary models on
   prediction residuals to detect anomalies and performance drift, using SHAP
   to interpret which features drove the largest errors.
@@ -29,22 +28,20 @@ taking a model all the way from data to deployment.
 - Developed a multimodal deep learning model to predict survival time for liver
   cancer patients from histopathology slides and CT scans, in collaboration
   with hospitals in Île-de-France.
-- Extracted and encoded histopathology patches with pretrained encoders,
-  applying attention-based Multiple Instance Learning (MIL) and aggregating
-  per-patch *predictions* — rather than features — via the MIL attention weights.
-- Combined histology and CT modalities via a weighted average of predictions
-  rather than feature concatenation, to avoid the larger CT feature vector
-  dominating the fused representation given the limited cohort size (70 patients);
-  achieved a mean absolute error (MAE) of 2.5 months on patients with survival
-  ≤ 12 months.
+- Since whole slides are too large for a neural network, split them into patches
+  encoded with pretrained models, and used attention-based Multiple Instance Learning (MIL)
+  to learn which tissue regions are most informative.
+- Combined the two sources by averaging their predictions rather than merging their
+  features, an approach suited to the small cohort of 70 patients: mean absolute
+  error (MAE) of 2.5 months on patients with survival ≤ 12 months.
 
 ## 🛠 Selected Projects
 
-**[Football Match Analyst](https://github.com/alexandrebertot/football-match-analyst)** · 🚧 *In progress*
+**[Football AI Agent — LLM & Match Prediction](https://github.com/alexandrebertot/football-match-analyst)** · 🚧 *In progress*
 LLM agent that answers questions about the top 5 European leagues and the Champions League
-by calling tools: live data from the football-data.org API and a LightGBM match predictor.
-Tool-calling loop written from scratch, local Qwen LLM served by Ollama, a local chat
-interface, FastAPI, Docker, CI with GitHub Actions. The predictor, tracked and versioned in
+by calling tools: current fixtures, results and standings from the football-data.org API and a LightGBM match outcome predictor.
+Tool-calling loop written from scratch, local Qwen 3.5 9B LLM served locally with Ollama, a local chat
+interface, FastAPI, Docker, CI with GitHub Actions. The predictor, tracked and registered with
 MLflow, closes 44% of the log-loss gap between a naive baseline and bookmakers' odds on
 held-out seasons.
 *Next: an LLM evaluation set, then QLoRA fine-tuning of a small model.*
@@ -52,12 +49,7 @@ held-out seasons.
 **[ASL Alphabet Recognition](https://github.com/alexandrebertot/asl-recognition)**
 Built a real-time American Sign Language alphabet recognition system (MediaPipe
 landmarks + MLP classifier, live webcam demo), trained on 24,000 images with a
-signer-disjoint split, achieving a macro F1 of 0.856 (85% accuracy) on unseen
-signers.
-
-**[Go Game with AI](https://github.com/Riad-Attou/go-ai-app)** · *Team project*
-Go game with a Pygame interface and an AI opponent using Minimax with
-alpha-beta pruning (PVS) and custom evaluation functions.
+signer-disjoint split, achieving a macro F1 of 0.856 on unseen signers.
 
 ## 🧰 Technical Skills
 
@@ -81,9 +73,7 @@ alpha-beta pruning (PVS) and custom evaluation functions.
 <p align="center"><b>Tools</b></p>
 <p align="center">
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
   <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
   <img src="https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white" />
-  <img src="https://img.shields.io/badge/Argo-EF7B4D?style=for-the-badge&logo=argo&logoColor=white" />
 </p>
